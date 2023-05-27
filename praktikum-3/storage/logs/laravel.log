@@ -1,0 +1,47 @@
+[2023-05-27 02:10:13] local.ERROR: There are no commands defined in the "make:" namespace.
+
+Did you mean this?
+    make {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"make:\" namespace.
+
+Did you mean this?
+    make at C:\\Users\\fengg\\praktikum-3\\vendor\\symfony\\console\\Application.php:632)
+[stacktrace]
+#0 C:\\Users\\fengg\\praktikum-3\\vendor\\symfony\\console\\Application.php(683): Symfony\\Component\\Console\\Application->findNamespace('make:')
+#1 C:\\Users\\fengg\\praktikum-3\\vendor\\symfony\\console\\Application.php(256): Symfony\\Component\\Console\\Application->find('make::controlle...')
+#2 C:\\Users\\fengg\\praktikum-3\\vendor\\symfony\\console\\Application.php(168): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(200): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\fengg\\praktikum-3\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2023-05-27 02:35:54] local.ERROR: syntax error, unexpected identifier "Route" {"exception":"[object] (ParseError(code: 0): syntax error, unexpected identifier \"Route\" at C:\\Users\\fengg\\praktikum-3\\routes\\web.php:29)
+[stacktrace]
+#0 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(502): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Users\\\\fengg\\\\...')
+#1 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(456): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Users\\\\fengg\\\\...')
+#2 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(192): Illuminate\\Routing\\Router->group(Array, 'C:\\\\Users\\\\fengg\\\\...')
+#3 C:\\Users\\fengg\\praktikum-3\\app\\Providers\\RouteServiceProvider.php(37): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\Users\\\\fengg\\\\...')
+#4 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#5 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#10 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#17 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1009): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(987): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#20 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(986): array_walk(Array, Object(Closure))
+#21 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(261): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(186): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#25 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(144): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#26 C:\\Users\\fengg\\praktikum-3\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\\fengg\\praktikum-3\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('C:\\\\Users\\\\fengg\\\\...')
+#28 {main}
+"} 
